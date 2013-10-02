@@ -2,13 +2,16 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 #welcome-page {
-  background-image: asset-url('balloons.jpg');
-  background-position: center;
+  .jumbotron {
+    &.hero {
+      background-image: asset-url('balloons.jpg');
+      background-position: center;
+      height: 420px;
 
-  &.jumbotron {
-    height: 420px;
-    h1, p {
-      color: white;
+      h1, p {
+        color: white;
+      }
     }
   }
 }
+
